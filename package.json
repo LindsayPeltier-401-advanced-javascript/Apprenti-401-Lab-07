@@ -1,0 +1,39 @@
+{
+  "name": "Apprenti-401-Lab-07",
+  "version": "1.0.0",
+  "description": "Express API Server",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "lint": "eslint '**/*.js'",
+    "test-watch": "jest --watchAll --verbose --coverage",
+    "start": "node index.js",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-07.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-07/issues"
+  },
+  "homepage": "https://github.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-07#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2",
+    "uuid": "^3.3.3"
+  }
+}
