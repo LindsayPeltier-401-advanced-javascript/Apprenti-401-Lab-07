@@ -6,8 +6,8 @@
 
 ### Links and Resources
 
-- [submission PR]()
-- [travis]()
+- [submission PR](https://github.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-07/pull/1)
+- [travis](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-07/builds/144471334)
 
 ### Setup
 
