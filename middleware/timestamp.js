@@ -13,5 +13,9 @@ function timeStamp(req, res, next) {
 }
 
 module.exports = timeStamp;
-
 //Credit: Trevor
+
+//app.use(function(req, res, next) {
+//console.log('Time:', Date.now());
+//next();
+//});
