@@ -4,19 +4,22 @@
 
 ### Author: Lindsay Peltier
 
-### Links and Resources
+### Resources
+
+#### Links
 
 - [submission PR](https://github.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-07/pull/1)
 - [travis](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-07/builds/144471334)
+
+#### Documentation
+* [api docs](http://xyz.com/api-docs) (API servers)
+* [JSdocs](./docs) 
 
 ### Setup
 
 #### How to initialize/run your server app (where applicable)
 
 - `npm start`
-- Endpoint: /docs
-
-  - Returns JSdocs
 
 #### Tests
 
