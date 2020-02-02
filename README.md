@@ -9,10 +9,10 @@
 #### Links
 
 - [submission PR](https://github.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-07/pull/1)
-- [travis](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-07/builds/144471334)
+- [travis](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-07)
 
 #### Documentation
-* [api docs](http://xyz.com/api-docs) (API servers)
+* [api docs](https://app.swaggerhub.com/apis/LindsayPeltier/Lab-07/0.1) (Swagger)
 * [JSdocs](./docs) 
 
 ### Setup
