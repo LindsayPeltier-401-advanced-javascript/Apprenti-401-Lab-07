@@ -4,8 +4,8 @@ const loggerMiddleware = require('../middleware/logger.js');
 
 describe('logger middleware', () => {
   let consoleSpy;
-  let req = {};
-  let res = {};
+  let request = {};
+  let response = {};
   let next = jest.fn(); //spy on the next method;
 
   beforeEach(() => {
@@ -17,12 +17,12 @@ describe('logger middleware', () => {
   });
 
   it('properly logs some output', () => {
-    loggerMiddleware(req, res, next);
+    loggerMiddleware(request, response, next);
     expect(consoleSpy).toHaveBeenCalled();
   });
 
   it('properly moves to the next middleware', () => {
-    loggerMiddleware(req, res, next);
+    loggerMiddleware(request, response, next);
     expect(next).toHaveBeenCalled();
   });
 });

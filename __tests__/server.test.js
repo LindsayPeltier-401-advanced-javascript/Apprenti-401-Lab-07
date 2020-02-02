@@ -23,9 +23,18 @@ describe(' web server', () => {
       .catch(console.error);
   });
 
-  it('should respond properly on request to /api/v1/food', () => {
+  it('should respond properly on request to /products', () => {
     return mockRequest
-      .get('/api/v1/food')
+      .get('/products')
+      .then(results => {
+        expect(results.status).toBe(200);
+      })
+      .catch(console.error);
+  });
+
+  it('should respond properly on request to /categories', () => {
+    return mockRequest
+      .get('/categories')
       .then(results => {
         expect(results.status).toBe(200);
       })
