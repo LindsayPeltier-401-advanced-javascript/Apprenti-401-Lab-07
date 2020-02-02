@@ -2,13 +2,13 @@
 
 /**
  * My Logger middleware, takes 3 arguments
- * @param  {} req
- * @param  {} res
+ * @param  {} request
+ * @param  {} response
  * @param  {} next
  */
 
-module.exports = (req, res, next) => {
-  console.log('__REQUEST__', req.method, req.path);
+module.exports = (request, response, next) => {
+  console.log(request.method, request.path, request.requestTime);
   next();
 };
 
