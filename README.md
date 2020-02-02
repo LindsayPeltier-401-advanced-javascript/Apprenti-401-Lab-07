@@ -4,19 +4,22 @@
 
 ### Author: Lindsay Peltier
 
-### Links and Resources
+### Resources
 
-- [submission PR]()
-- [travis]()
+#### Links
+
+- [submission PR](https://github.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-07/pull/1)
+- [travis](https://www.travis-ci.com/LindsayPeltier-401-advanced-javascript/Apprenti-401-Lab-07)
+
+#### Documentation
+* [api docs](https://app.swaggerhub.com/apis/LindsayPeltier/Lab-07/0.1) (Swagger)
+* [JSdocs](./docs) 
 
 ### Setup
 
 #### How to initialize/run your server app (where applicable)
 
 - `npm start`
-- Endpoint: /docs
-
-  - Returns JSdocs
 
 #### Tests
 
@@ -25,4 +28,4 @@
 
 #### UML
 
-![UML]()
+![UML](assets/lab07-UML.png)
