@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: models/memory-model.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,81 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: models/memory-model.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
 
+const uuid = require('uuid/v4');
 
-    <h3> </h3>
+/**
+ * @class Model
+ */
+class Model {
+  /**
+   *Creates an instance of Model.
+   * @memberof Model
+   */
+  constructor(schema) {
+    this.database = [];
+    this.schema = schema;
+  }
+  /**
+ *
+ *
+ * @param {*} id
+ * @memberof Model
+ */
+  get(id) {
+    let response = id ? this.database.filter((record) => record.id === id) : this.database;
+    return Promise.resolve(response);
+  }
+  /**
+ *
+ *
+ * @param {*} record
+ * @memberof Model
+ */
+  create(record) {
+    record.id = uuid();
+    this.database.push(record);
+    return Promise.resolve(record);
+  }
+  /**
+ *
+ *
+ * @param {*} id
+ * @param {*} record
+ * @memberof Model
+ */
+  update(id, record) {
+    this.database = this.database.map((item) => (item.id === id) ? record : item);
+    return Promise.resolve(record);
+  }
+  /**
+ *
+ *
+ * @param {*} id
+ * @memberof Model
+ */
+  delete(id) {
+    this.database = this.database.filter((record) => record.id !== id);
+    return Promise.resolve();
+  }
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+}
+/**
+ *  @module Model - exports Model
+ */
+module.exports = Model;</code></pre>
+        </article>
+    </section>
 
 
 

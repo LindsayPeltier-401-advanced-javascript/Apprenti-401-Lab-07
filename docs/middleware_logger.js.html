@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: middleware/logger.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,33 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: middleware/logger.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
 
+/**
+ * My Logger middleware, takes 3 arguments
+ * @param  {} request
+ * @param  {} response
+ * @param  {} next
+ */
 
-    <h3> </h3>
+module.exports = (request, response, next) => {
+  console.log(request.method, request.path, request.requestTime);
+  next();
+};
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+//Not ideal logging method; requires manual update for more sophisticated servers
+</code></pre>
+        </article>
+    </section>
 
 
 
